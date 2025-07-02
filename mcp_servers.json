@@ -1,11 +1,12 @@
 {
-  "math": {
-    "command": "python",
-    "args": ["./mcp_servers/math_server.py"],
-    "transport": "stdio"
-  },
-  "weather": {
-    "url": "http://localhost:8000/mcp/",
-    "transport": "streamable_http"
+  "Dremio": {
+    "command": "uv",
+    "args": [
+        "run",
+        "--directory",
+        "dremio-mcp",
+        "dremio-mcp-server",
+        "run"
+    ]
   }
 }
